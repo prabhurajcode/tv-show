@@ -11,7 +11,7 @@ async function result(){
         
         var search_result = document.createElement("div");
 
-        search_result.innerHTML = ""; 
+        search_result.innerHTML += ""; 
 
         search_result.innerHTML +=` 
         <div class="card" style="width: 18rem;">
