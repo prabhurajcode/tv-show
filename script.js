@@ -8,10 +8,13 @@ async function result(){
         var res = await data.json();
          
         console.log(res[0]);
+       
+        var searchContainer = document.getElementById("search_result");
+        searchContainer.innerHTML = "";
+
         
         var search_result = document.createElement("div");
 
-        search_result.innerHTML += ""; 
 
         search_result.innerHTML +=` 
         <div class="card" style="width: 18rem;">
@@ -37,7 +40,7 @@ async function result(){
 `;
 
 
-document.getElementById("search_result").appendChild(search_result);
+searchContainer.appendChild(search_result);
 
 
 
